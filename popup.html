@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			header {
+				height: 20%
+			  	padding: 10px;
+			  	text-align: center;
+			  	font-size: 35px;
+			  	background-color: #899dbc;
+			}
+			main {
+			  	padding: 20px;
+			  	height: 70%;
+			 	background-color: #f1f1f1;
+			}
+			footer {
+				text-align: center;
+				background-color: #a9b5c9;
+			}
+			h1 {
+				font-family: sans-serif;
+				font-size: 20px;
+				margin: 5px;
+			}
+			li {
+				margin: 5px;
+			}
+			body {
+				height: 200px;
+				width: 200px;
+			}
+			.grid-container {
+				display: grid;
+				grid-template-columns: auto auto;
+			}
+			#addButton {
+				width: 20px;
+				height: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- TODO: make this not suck visually -->
+		<header>
+			<h1>Time Hero</h1>
+			<div class="grid-container">
+				<div class="grid-item">
+					<input id="input"></input>
+				</div>
+				<div class="grid-item">
+					<button id="addButton">+</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			
+			<ul id="blockedSiteUl">
+			</ul>
+			<script src="popup.js"></script>
+		</main>
+		<footer id="footer">
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Page Blocked! </title>
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 20px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav { /*needs fixing Rawr xD*/
+			  float: left;
+			  width: 30%;
+			  height: 250px;
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 5px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<!--TODO: make this look good. Create page for blocked sites, settings-->
+		<header>
+		  <h2>You've been stopped!!!</h2>
+		</header>
+
+		<section>
+		  <nav>
+		    <ul>
+		      <li><a href="#">Blocked Sites</a></li>
+		      <li><a href="#">Settings</a></li>
+		    </ul>
+		  </nav>
+		  
+		  <article>
+		    <h1>YOUR TIME IS PRECIOUS AND FINITE</h1>
+		    <p>Some suggestions of things you can do with your time:</p>
+		    <ul>
+		    	<li>Read a poem out loud.</li>
+		    	<li>Meditate</li>
+		    	<li>Draw</li>
+		    	<li>Practice piano</li>
+		    	<li>Read a book</li>
+		    	<li>Work on a CS side project</li>
+		    	<li>Stretch</li>
+		    	<li>Talk to your friends</li>
+		    	<li>Work on your voice</li>
+		    </ul>
+		  </article>
+		</section>
+
+		<footer>
+		  <p>Time Hero</p>
+		</footer>
+	</body>
+</html>
