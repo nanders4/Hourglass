@@ -15,12 +15,15 @@ chrome.tabs.onUpdated.addListener(function() {
 			for(let i=0; i<blockedSiteList.length; i++) {
 				var string1 = "http://"+blockedSiteList[i];
 				var string2 = blockedSiteList[i]+"$";
+				var string3 = blockedSiteList[i]+"\/$"
 				var regex1 = new RegExp(string1);
 				var regex2 = new RegExp(string2);
-				if(currentUrl.match(regex1) || currentUrl.match(regex2)) {
+				var regex3 = new RegExp(string3);
+				if(currentUrl.match(regex1) || currentUrl.match(regex2) || currentUrl.match(regex3)) {
 					chrome.tabs.update({url: chrome.extension.getURL('blockedPage.html')});
 				}
 				chrome.extension.getBackgroundPage().console.log("reg1 "+currentUrl.match(regex1));
+				chrome.extension.getBackgroundPage().console.log("reg2 "+currentUrl.match(regex2));
 				chrome.extension.getBackgroundPage().console.log("reg2 "+currentUrl.match(regex2));
 			}
 		});

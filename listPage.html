@@ -37,6 +37,7 @@
 
 			article {
 			  float: left;
+			  color: black;
 			  padding: 20px;
 			  width: 70%;
 			  background-color: #f1f1f1;
@@ -67,38 +68,32 @@
 		</style>
 	</head>
 	<body>
-		<!--TODO: make this look good. Create page for blocked sites, settings-->
 		<header>
-		  <h2>You've been stopped!!!</h2>
-		</header>
-
+			<h1>Time Hero</h1>
+			Blocked Sites
+		<header>
 		<section>
 		  <nav>
-		    <ul id="menuUl">
-		    	<script src="siteListReferencer.js"></script>
-		      	<li><a href="#">Settings</a></li>
+		    <ul>
+		      <li><a href="#">Settings</a></li>
 		    </ul>
 		  </nav>
 		  
 		  <article>
-		    <h1>YOUR TIME IS PRECIOUS AND FINITE</h1>
-		    <p>Some suggestions of things you can do with your time:</p>
-		    <ul>
-		    	<li>Read a poem out loud.</li>
-		    	<li>Meditate</li>
-		    	<li>Draw</li>
-		    	<li>Practice piano</li>
-		    	<li>Read a book</li>
-		    	<li>Work on a CS side project</li>
-		    	<li>Stretch</li>
-		    	<li>Talk to your friends</li>
-		    	<li>Work on your voice</li>
+		  	<div class="grid-container">
+				<div class="grid-item">
+					<input id="input"></input>
+				</div>
+				<div class="grid-item">
+					<button id="addButton">+</button>
+				</div>
+			</div>
+		    <ul id="blockedSiteUl">
 		    </ul>
+		    <script src="listPage.js"></script>
 		  </article>
 		</section>
-
-		<footer>
-		  <p>Time Hero</p>
+		<footer id="footer">
 		</footer>
 	</body>
 </html>
